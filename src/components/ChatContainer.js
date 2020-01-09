@@ -11,8 +11,6 @@ class ChatContainer extends React.Component{
         </div>
         )
     }
-        
-    
 }
 
 export default ChatContainer;
