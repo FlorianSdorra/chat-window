@@ -1,7 +1,12 @@
 import React from 'react';
+import {connect} from 'react-redux'
 
 const MessagesContainer = props => {
-    return <h2>Messages</h2>
+    return <h2>{props.message}</h2>
 }
 
-export default MessagesContainer
+const mapStateToProps = state => {
+    return state;
+};
+
+export default connect(mapStateToProps)(MessagesContainer)
