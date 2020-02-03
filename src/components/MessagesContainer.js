@@ -21,6 +21,7 @@ const MessagesContainer = props => {
 }
 
 const mapStateToProps = state => {
+    console.log('MY STATE', state)
     return {messages: state.messages}
 };
 

@@ -10,29 +10,50 @@ html, body, #root{
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    background-image: url('../assets/images/maarten-hof-tales-from-the-loop-startscreen-main-camera-2017-06-24-13-22-22-2048x2048@2x.png');
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-
+    .le-pic{
+      width: 40%;
+      height: 100%;
+      background: url('../assets/images/maarten-hof-tales-from-the-loop-startscreen-main-camera-2017-06-24-13-22-22-2048x2048@2x.png') no-repeat center center fixed;
+      opacity: .85;
+    }
     .app {
-      width: 50%;
+      width: 60%;
       height: 100%;
       display: flex;
       flex-direction: column;
-      background-color: white;
+      background-color: whitesmoke;
       .messages{
         flex: 5;
         height: 80%;
-        width: 80%;
+        width: 90%;
         margin: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 5px;
+        
         
         .messages-header{
-          text-align: center;
+          height: 10%;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          
         }
         .messages-list{
           height: 80%;
           overflow: auto;
+          .message{
+            display: flex;
+            justify-content: flex-start;
+            justify-items: flex-end;
+            margin: 10px;
+            p{
+              margin: 0;
+            }
+            .avatar{
+              height: 50px;
+            }
+          }
         }
       }
       .form-container{
@@ -40,17 +61,21 @@ html, body, #root{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        justify-items: center;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin: 5px;
         
         form{
           display: flex;
           justify-content: center;
         
-          label{
+          // label{
            
-          }
-          .btn{
+          // }
+          // .btn{
 
-          }
+          // }
         }
         .actions{
           display: flex;

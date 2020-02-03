@@ -15,6 +15,7 @@ class App extends React.Component{
           <MessagesContainer></MessagesContainer>
           <FormContainer></FormContainer>
       </div>
+        <div className="le-pic"></div>
       </div>
         
     );
