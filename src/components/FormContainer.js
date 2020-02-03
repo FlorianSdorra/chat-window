@@ -22,7 +22,8 @@ class FormContainer extends React.Component{
 
     render(){
         return (
-            <form onSubmit={this.handleSubmit}>
+            <div className="form-container">
+                <form onSubmit={this.handleSubmit}>
                 <label>
                     <input
                         type="text"
@@ -30,15 +31,22 @@ class FormContainer extends React.Component{
                         onChange={this.handleChange}
                         />
                 </label>
-                    <input
+                    <input className="btn"
                         type="submit"
                         value="Submit" 
                         />
             </form>
+            <div className="actions">
+                <button>ME</button>
+                <button>My imaginary friend</button>
+            </div>
+            </div>
+            
         )
     }
 }
 const mapStateToProps = state => {
+    console.log(state)
     return state
 };
 

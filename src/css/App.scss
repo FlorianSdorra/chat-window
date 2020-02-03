@@ -4,5 +4,57 @@ html, body, #root{
   width: 100%;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
+
+  .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url('../assets/images/maarten-hof-tales-from-the-loop-startscreen-main-camera-2017-06-24-13-22-22-2048x2048@2x.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .app {
+      width: 50%;;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      .messages{
+        flex: 5;
+        
+        .messages-header{
+          text-align: center;
+        }
+        .messages-list{
+          height: 80%;
+          overflow: scroll;
+        }
+      }
+      .form-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        form{
+          display: flex;
+          justify-content: center;
+        
+          label{
+           
+          }
+          .btn{
+
+          }
+        }
+        .actions{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
