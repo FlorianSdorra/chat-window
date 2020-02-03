@@ -1,9 +1,14 @@
+$bgColorBasic: #352c46;
+$bgColorSecondary: #282833;
+$bgColorInput: #222222;
+
 html, body, #root{
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
+  color: white;
 
   .wrapper{
     width: 100%;
@@ -21,7 +26,7 @@ html, body, #root{
       height: 100%;
       display: flex;
       flex-direction: column;
-      background-color: whitesmoke;
+      background-color: $bgColorBasic;
       .messages{
         flex: 5;
         height: 80%;
@@ -49,9 +54,13 @@ html, body, #root{
             margin: 10px;
             p{
               margin: 0;
+              word-break: break-word;
             }
             .avatar{
               height: 50px;
+            }
+            .received {
+              flex-direction: row-reverse;
             }
           }
         }
@@ -65,14 +74,29 @@ html, body, #root{
         border: solid 1px black;
         border-radius: 10px;
         margin: 5px;
+        background-color: $bgColorSecondary;
+        .active {
+          background-color: #3f51b5;
+          color: $bgColorSecondary;
+        }
+        button,
+        input {
+          border-radius: 50px;
+          margin: 5px;
+          padding: 10px 20px;
+          color: #282833;
+          border: none;
+        }
         
         form{
           display: flex;
           justify-content: center;
         
-          // label{
+          .message-input{
+           background-color: $bgColorInput;
+           color: whitesmoke;
            
-          // }
+          }
           // .btn{
 
           // }
