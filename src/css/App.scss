@@ -18,8 +18,9 @@ html, body, #root{
     .le-pic{
       width: 40%;
       height: 100%;
-      background: url('../assets/images/maarten-hof-tales-from-the-loop-startscreen-main-camera-2017-06-24-13-22-22-2048x2048@2x.png') no-repeat center center fixed;
-      opacity: .85;
+      background: url('../assets/images/maarten-hof-tales-from-the-loop-startscreen-main-camera-2017-06-24-13-22-22-2048x2048@2x.png');
+      background-size: cover;
+      opacity: .95;
     }
     .app {
       width: 60%;
@@ -47,11 +48,14 @@ html, body, #root{
         .messages-list{
           height: 80%;
           overflow: auto;
+          .received {
+            flex-direction: row-reverse;
+          }
           .message{
             display: flex;
-            justify-content: flex-start;
-            justify-items: flex-end;
             margin: 10px;
+            padding: 5px;
+            
             p{
               margin: 0;
               word-break: break-word;
@@ -59,8 +63,8 @@ html, body, #root{
             .avatar{
               height: 50px;
             }
-            .received {
-              flex-direction: row-reverse;
+            .time{
+              font-size: 10px;
             }
           }
         }
@@ -97,9 +101,6 @@ html, body, #root{
            color: whitesmoke;
            
           }
-          // .btn{
-
-          // }
         }
         .actions{
           display: flex;
